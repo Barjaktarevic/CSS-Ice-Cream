@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Quicksand:wght@300&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(252, 231, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 27.5%;
+    height: 90vmin;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.lick {
+    position: relative;
+    flex-grow: 5;
+    width: 100%;
+    background-color: rgb(254, 150, 150);
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 7.5%;
+    border-bottom-right-radius: 7.5%;
+    box-shadow: 0 -15px 0px 0px rgb(249, 198, 198);
+}
+
+.stick {
+    flex-grow: 1;
+    width: 25%;
+    background-color: rgb(250, 189, 110);
+    margin: 0 auto;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    box-shadow: 0 -15px 0px 0px  rgb(247, 222, 191);
+    margin-top: 3.75%;
+}
+
+.eyes {
+    position: absolute;
+    top: 55%;
+    background-color:rgb(248, 87, 178);
+    border-radius: 50%;
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.eye-left {
+    transform: translateX(-100%);
+    left: 30%;
+    background: radial-gradient(circle at 50% 25%, white 17%, rgb(248, 87, 178) 17%);
+}
+
+.eye-right {
+    transform: translateX(100%);
+    right: 30%;
+    background: radial-gradient(circle at 50% 25%, white 17%, rgb(248, 87, 178) 17%);
+}
+
+.mouth {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(248, 87, 178);
+    width: 15vmin;
+    height: 7vmin;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+}
+
+.shade {
+    position: absolute;
+    background-color: rgb(249, 198, 198);
+    width: 30%;
+    height: 8vmin;
+    right: 10%;
+    top: 15%;
+    transform: rotate(60deg);
+    border-radius: 55%;
+}
+
+.author {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    translate: transform(100%, 100%);
+    right: 5%;
+    font-size: 3rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: rgb(248, 87, 178);
+    color: white;
+    transition: 300ms;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+
+    background-color: rgb(249, 198, 198);
+    transition: 500ms ease-in-out;
+    scale: 0;
+}
+
+a:hover::before {
+    scale: 1;
+}
+
