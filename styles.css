@@ -17,8 +17,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 27.5%;
-    height: 90vmin;
+    width: 50vmin;
+    height: 90vh;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -32,7 +32,7 @@ body {
     border-top-right-radius: 45%;
     border-bottom-left-radius: 7.5%;
     border-bottom-right-radius: 7.5%;
-    box-shadow: 0 -15px 0px 0px rgb(249, 198, 198);
+    box-shadow: 0 -1vh 0px 0px rgb(249, 198, 198);
 }
 
 .stick {
@@ -42,7 +42,7 @@ body {
     margin: 0 auto;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
-    box-shadow: 0 -15px 0px 0px  rgb(247, 222, 191);
+    box-shadow: 0 -1vh 0px 0px  rgb(247, 222, 191);
     margin-top: 3.75%;
 }
 
@@ -93,10 +93,10 @@ body {
 .author {
     position: absolute;
     text-align: center;
-    top: 80%;
+    top: 90%;
     translate: transform(100%, 100%);
     right: 5%;
-    font-size: 3rem;
+    font-size: 1rem;
     font-family: "Quicksand", sans-serif;
 }
 
@@ -129,3 +129,20 @@ a:hover::before {
     scale: 1;
 }
 
+@media screen and (max-width: 500px) {
+    .main-container {
+        width: 75vmin;
+        height: 80vh;
+        margin-top: 15%;
+    }
+
+    .eyes {
+        width: 8vmin;
+        height: 8vmin;
+    }
+
+    .mouth {
+        width: 20vmin;
+        height: 10vmin;
+    }
+}
