@@ -94,8 +94,7 @@ body {
     position: absolute;
     text-align: center;
     top: 90%;
-    translate: transform(100%, 100%);
-    right: 5%;
+    right: 2.5%;
     font-size: 1rem;
     font-family: "Quicksand", sans-serif;
 }
